@@ -2,7 +2,7 @@
   "id": "harper",
   "name": "Harper",
   "version": "0.13.0",
-  "minAppVersion": "0.15.0",
+  "minAppVersion": "1.7.7",
   "description": "The Grammar Checker for Developers",
   "author": "Elijah Potter",
   "authorUrl": "https://elijahpotter.dev",

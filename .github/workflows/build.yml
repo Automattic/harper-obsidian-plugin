@@ -2,9 +2,8 @@ name: Build
 
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    tags:
+      - "*"
 
 env:
   CARGO_TERM_COLOR: always
@@ -21,6 +20,8 @@ jobs:
     - name: Install Rust Nightly
       run: rustup toolchain install nightly && rustup component add rustfmt --toolchain nightly
     - uses: extractions/setup-just@v1
+    - name: Install `pandoc`
+      run: sudo apt-get update && sudo apt-get install pandoc -y
     - name: Install `wasm-pack`
       run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
     - name: Checkout Harper
@@ -32,3 +33,8 @@ jobs:
       with: 
         name: harper-obsidian-plugin.zip
         path: harper-obsidian-plugin.zip
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: harper/packages/obsidian-plugin/main.js,manifest.json
+        allowUpdates: true
+        draft: true

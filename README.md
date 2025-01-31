@@ -26,10 +26,6 @@ The Harper plugin is a powerful, privacy-first grammar and spell-checking tool d
 - Harper is fully open source, allowing transparency and community contributions to improve its functionality.
 - Developers can review the codebase or contribute directly via the [GitHub repository](https://github.com/automattic/harper-obsidian-plugin).
 
-### Simple Installation and Integration
-
-- Easily install Harper from Obsidian’s Community Plugins section.
-
 ## How It Compares to Other Plugins
 
 | Feature                | Harper                        | LanguageTool                      |

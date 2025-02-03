@@ -44,6 +44,9 @@ The Harper plugin is a powerful, privacy-first grammar and spell-checking tool d
 3. Click "Install" and then "Enable."
 4. Start typing in your notes—Harper will automatically highlight errors as you go!
 
+> **Warning**
+> Harper expects an up-to-date version of Electron. If you have issues, [reinstall Obsidian](https://obsidian.md/download) or otherwise update your Electron version.
+
 ## Future Development
 
 The team behind Harper welcomes feedback and [contributions from the community](https://github.com/automattic/harper). Planned updates include:

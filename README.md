@@ -1,6 +1,6 @@
 # `harper-obsidian-plugin`
 
-The Harper plugin is a powerful, privacy-first grammar and spell-checking tool designed specifically for Obsidian users. Unlike many other grammar checkers, Harper operates entirely offline, ensuring your data remains secure while providing real-time, high-performance corrections. This plugin is ideal for writers, academics, and developers who value privacy and efficiency in their workflows.
+[Harper is a powerful, privacy-first grammar and spell-checking tool](https://writewithharper.com/) designed for Obsidian users. Unlike many other grammar checkers, Harper operates entirely offline, ensuring your data remains secure while providing real-time, high-performance corrections. This plugin is ideal for writers, academics, and developers who value privacy and efficiency in their workflows.
 
 ![A screenshot of Obsidian with Harper installed](./screenshot.webp)
 

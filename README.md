@@ -47,7 +47,7 @@ Unlike other offerings (like Grammarly) Harper explicitly ignores the contents o
 4. Start typing in your notes—Harper will automatically highlight errors as you go!
 
 > **Warning**
-> Harper expects an up-to-date version of Electron. If you have issues, [reinstall Obsidian](https://obsidian.md/download) or otherwise update your Electron version.
+> Harper expects an up-to-date version of the Obsidian installer. If you have issues, [reinstall Obsidian](https://obsidian.md/download) or otherwise update your installer version.
 
 ## Future Development
 

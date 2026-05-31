@@ -21,7 +21,7 @@ jobs:
       run: corepack enable
     - name: Install Rust Nightly
       run: rustup toolchain install nightly && rustup component add rustfmt --toolchain nightly
-    - uses: extractions/setup-just@69d82fb0233557aec017ef13706851d0694e0f1d # v1
+    - uses: extractions/setup-just@69d82fb0233557aec017ef13706851d0694e0f1d # v1.6.0
     - name: Install `pandoc`
       run: sudo apt-get update && sudo apt-get install pandoc -y
     - name: Install `wasm-pack`
@@ -35,7 +35,7 @@ jobs:
       with: 
         name: harper-obsidian-plugin.zip
         path: harper-obsidian-plugin.zip
-    - uses: ncipollo/release-action@339a81892b84b4eeb0f6e744e4574d79d0d9b8dd # v1
+    - uses: ncipollo/release-action@339a81892b84b4eeb0f6e744e4574d79d0d9b8dd # v1.21.0
       with:
         artifacts: harper/packages/obsidian-plugin/main.js,manifest.json
         allowUpdates: true

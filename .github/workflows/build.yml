@@ -13,15 +13,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
+    - uses: actions/checkout@v6
+    - uses: actions/setup-node@v6
       with:
         node-version: 20
     - name: Enable Corepack
       run: corepack enable
     - name: Install Rust Nightly
       run: rustup toolchain install nightly && rustup component add rustfmt --toolchain nightly
-    - uses: extractions/setup-just@69d82fb0233557aec017ef13706851d0694e0f1d # v1.6.0
+    - uses: extractions/setup-just@53165ef7e734c5c07cb06b3c8e7b647c5aa16db3 # v4.0.0
     - name: Install `pandoc`
       run: sudo apt-get update && sudo apt-get install pandoc -y
     - name: Install `wasm-pack`
@@ -31,7 +31,7 @@ jobs:
     - name: Build
       run: just build
     - name: Upload Artifact 
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with: 
         name: harper-obsidian-plugin.zip
         path: harper-obsidian-plugin.zip
